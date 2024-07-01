@@ -1,0 +1,476 @@
+:root {
+    --primary: rgb(37, 138, 200);
+    --second: #e95399;
+    --test: rgb(231, 34, 93);
+    --three: #fffcf5;
+    --bg: #fffcf5;
+    --underscr: #ffc50c;
+    --text:#272727;
+    --bgsection: #fffcfc;
+    --gradien: 37, 138, 200;
+    --gradien2: 31, 90, 161;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+  }
+
+  .mynav{
+    /* background: linear-gradient(115deg, rgba(var(--gradien) 100%, rgba(var(--gradien2) 100%))); */
+    background: linear-gradient(-180deg, rgba(var(--gradien)),rgba(var(--gradien)),rgba(var(--gradien)), rgba(var(--gradien2), 1));
+    
+    padding: 1.1rem 7%;
+  }
+
+  nav .navbar-brand{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    color:var(--bg);
+  }
+  nav .navbar-brand span{
+   color: var(--three);
+  }
+
+  nav .navbar-collapse .navbar-nav .nav-item a{
+    margin: 0 0rem;
+  }
+
+  .nav-item a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid var(--underscr);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+    border-radius: 10px;
+  }
+
+  .nav-item a:hover::after {
+    transform: scaleX(0.9);
+    
+  }
+
+  .infografis{
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 115px;
+    cursor: pointer;
+  }
+
+  .bt-banner{
+    background-color: #ffc50c;
+    border-radius: 25px;
+    height: 70px;
+  }
+
+  .produk-img{
+    width: 100%;
+  }
+
+  .bjp-rekomen3{
+    background-image: url('../img/backgroundtreatment.webp'); 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: var(--text);
+    font-size: 1.2rem;
+  }
+
+  .bjp-rekomen2{
+    background-image: url('../img/backgrondhotel.webp'); 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: var(--text);
+    font-size: 1.2rem;
+  }
+
+  .bjp-rekomen{
+    background-color: var(--bgsection);
+    color: var(--text);
+    font-size: 1.2rem;
+  }
+
+  .myfont{
+    font-family: "halant", sans-serif;
+  }
+
+  .myfontnameproduk{
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .myfontabout{
+    font-size: 13px;
+  }
+
+  .myfontbeforediskon{
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .harga{
+    margin-bottom: 2px;
+  }
+
+  .mybutton{
+    border: none;
+    height: 30px;
+    padding-top:7px;
+  }
+
+  .myfontcolor{
+    color: var(--primary);
+  }
+
+  .mycard-body{
+    height: 120px;
+  }
+
+  .mycard-body2{
+    height: 60px;
+  }
+
+  .about{
+    background-color:#ffffff
+   
+  }
+
+  .fontdark{
+    color:var(--text);
+  }
+
+  .gambarkami{
+    height: 400px;
+  }
+
+  .cardgalery{
+    box-shadow: 2px 2px 4px rgb(255, 197, 12);
+  }
+
+  .cardshop{
+    box-shadow: 2px 2px 4px rgb(253, 144, 204);
+  }
+  footer{
+    text-align: center;
+    padding-top: 5px;
+    height: 35px;
+    background-color: var(--primary);
+  }
+  /* .abouthome {
+    background-color: #f6f9ff;
+    background-image: url('../img/paralax.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 250px;
+  } */
+
+  .abouttext{
+    position: absolute;
+    top: 40%;
+    margin-left: 10%;
+  }
+  .textabout{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .textabout2{
+    margin-top: -17px;
+    margin-bottom: 4px;
+    font-size: 1.3rem;
+  }
+
+  .listpow{
+    list-style: none;
+  }
+
+  .listpow::before{
+    content: url(../img/paw-solid.svg);
+    z-index: 99;
+    position: absolute;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .listcek{
+    list-style: none;
+    margin-left: 15px;
+  }
+
+  .listcek::before{
+    content: url(../img/square-check-solid.svg);
+    z-index: 99;
+    position: absolute;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero2.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center  30%;;
+    z-index: -1;
+  }
+  .hero{
+    min-height:75vh;
+    position: relative;
+  }
+
+
+  .hero1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero1.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center  30%;;
+    z-index: -1;
+  }
+  .hero1{
+    min-height:75vh;
+    position: relative;
+  }
+
+  .hero2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero3.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center  30%;;
+    z-index: -1;
+  }
+  .hero2{
+    min-height:75vh;
+    position: relative;
+  }
+
+  .hero3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero4.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center  30%;;
+    z-index: -1;
+  }
+  .hero3{
+    min-height:75vh;
+    position: relative;
+  }
+
+  .hero4::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero5.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center  30%;;
+    z-index: -1;
+  }
+  .hero4{
+    min-height:75vh;
+    position: relative;
+  }
+
+  .hero5::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero6.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center  30%;;
+    z-index: -1;
+  }
+  .hero5{
+    min-height:75vh;
+    position: relative;
+  }
+
+  .hero6::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero7.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center  30%;;
+    z-index: -1;
+  }
+  .hero6{
+    min-height:75vh;
+    position: relative;
+  }
+
+  .hero7::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/catevent.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center  30%;;
+    z-index: -1;
+  }
+  .hero7{
+    min-height:75vh;
+    position: relative;
+  }
+
+  .hero8::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero8.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center  30%;;
+    z-index: -1;
+  }
+  .hero8{
+    min-height:75vh;
+    position: relative;
+  }
+
+  .pltreatment{
+    background-color: rgba(255, 255, 255, 0.2); 
+    -webkit-backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
+  }
+
+  .pltreatment2{
+    background-color: rgba(218, 255, 207, 0.212); 
+    -webkit-backdrop-filter: blur(1px); 
+    backdrop-filter: blur(1px);
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    margin-right: 15px;
+    
+  }
+
+  .backgroundindex{
+    background-color: rgba(255, 255, 255, 0.767); 
+    -webkit-backdrop-filter: blur(1px); 
+    backdrop-filter: blur(1px);
+    margin-bottom: 15px ;
+    
+  }
+
+  .cardhotel{
+    height: 60px;
+  }
+
+    
+  .mytexthotel{
+    font-size: 65%;
+  }
+
+  button.mfp-close, button.mfp-arrow
+  {
+    display: none;
+  }
+
+  .share{
+    background: linear-gradient(-180deg, rgba(var(--gradien)),rgba(var(--gradien)),rgba(var(--gradien)), rgba(var(--gradien2), 1));
+
+  }
+
+
+  /* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .jumbo {
+    height: 400px;
+  }
+
+  .produk-img{
+    width: 75%;
+  }
+
+  .pltreatment2{
+    font-size: 50%;
+  }
+  
+}
+
+@media (max-width: 460px) {
+  .cardhotel{
+    height: 80px;
+
+  }
+  .mytexthotel{
+
+    font-size: 65%;
+  }
+
+  
+  
+}
